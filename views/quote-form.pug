@@ -1,0 +1,53 @@
+doctype html(lang='en')
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  link(rel='stylesheet', href='/css/quote-form.css')
+  script(src='https://kit.fontawesome.com/16ea1f2f8f.js')
+  title Document
+
+include header
+
+form(action='#', method='post')
+    .grid
+        h1 Get a Quote
+        |             
+        p#description
+          | Please fill in this form about the job you need done and we&apos;ll get back to you within the hour! That&apos;s a Qscape guarantee
+        |             
+        |             
+        hr
+        |         
+        |             
+        label.rq(for='email') Email
+        |             
+        input#email(type='text', placeholder='Enter Email', name='email', required='')
+        |   
+        |             
+        label.rq(for='name') Name
+        |           
+        input#name(type='text', name='name', placeholder='First Last', required='')
+        |   
+        |           
+        label(for='phone') Phone Number
+        |           
+        |           
+        input#phone(type='tel', name='phone', pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}', required='', placeholder='Ex 485-586-1256')
+        |             
+        label.tips(for='file') Upload Photo&apos;s of the job
+        |  
+        br
+        |             
+        input#file(type='file', name='my-file')
+        br
+        |             
+        hr
+        |             
+        label(for='explain') Please give a description of what you would like done for you
+        |             
+        textarea#explain(name='explain')
+        |             
+        button.submit(type='submit') Get a Quote
+
+include footer

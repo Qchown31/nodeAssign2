@@ -1,0 +1,230 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("header-footer.css");
+
+
+/* fixed nav */
+a.head {
+  background-color: #c5b358;
+  padding: .5em 2em .5em 2em;
+  border-radius: 10px;
+  }
+
+.flex {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 4em;
+  background-color: #103112;
+ 
+}
+
+ul#head { 
+  display: flex;
+  align-items: center;
+}
+
+ a {
+  color: #103112;
+}
+
+a.ham {
+color: #c5b358;
+}
+
+ img#logo {
+  height:3em;
+}
+
+
+/* hidden nav */
+
+nav#mobile {
+  display: none;
+}
+
+nav li:hover {
+  transform: scale(1.1)
+}
+/* phone burger menu */
+@media only screen and (max-width: 620px) {
+
+  nav#mobile {
+    display: block;
+  }
+
+  ul#head :nth-child(n+2){
+    display: none;
+  }
+ 
+a {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+/* hamburger menu */
+#menuToggle
+{
+display: block;
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 1;
+-webkit-user-select: none;
+user-select: none;
+}
+
+#menuToggle input
+{
+display: block;
+width: 40px;
+height: 32px;
+position: fixed;
+top: 10px;
+left: 14px;
+cursor: pointer;
+
+opacity: 0; 
+z-index: 2; 
+-webkit-touch-callout: none;
+}
+
+
+
+/* making the hamburger */
+#menuToggle span
+{
+
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+
+background: #c5b358;
+border-radius: 3px;
+
+z-index: 1;
+
+transform-origin: 4px 0px;
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+/* make burger into the X */
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+background: #c5b358;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+li {
+text-align: center;
+}
+
+#menu
+{
+border-radius: 0px 0px 20px 20px;
+position: fixed;
+width: 200px;
+margin: -100px 0 0 -50px;
+padding: 10px;
+top: 172px;
+
+background: #103112;
+list-style-type: none;
+transform-origin: 0% 0%;
+transform: translate(-100%, 0);
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+padding: 10px 0;
+font-size: 22px;
+}
+
+/* making the transition */
+#menuToggle input:checked ~ ul
+{
+transform: none;
+}
+}
+
+
+
+
+html {
+  background-color: #cabf89;
+}
+
+
+
+
+/* make footer */
+
+#footer {display: flex;
+  background: #103112;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+ 
+
+}
+
+ .footer {
+   color: #c5b358;
+ }
+
+ #footerimg {
+  height: 5vw;
+}
+
+#contact-info {
+  font-size: large;
+  width: 16ch;
+ 
+}
+
+#contact-info > li {
+  color: #c5b358;
+  width: 16ch;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #contact-info {
+    font-size: small
+  }
+}

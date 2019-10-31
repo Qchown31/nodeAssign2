@@ -1,0 +1,51 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("header-footer.css");
+
+
+section {
+  padding: 3em;
+  
+}
+
+h1 {
+  text-align: center;
+  padding:1em;
+  color: #103112;
+}
+
+ul {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px;
+    
+}
+
+ul > li > img {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  
+}
+
+@media only screen and (max-width: 950px) {
+  ul {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+  }
+  
+  ul > li > img {
+    height: 250px;
+    width: 250px;
+  }
+  section {
+    padding: 1em;
+  }
+  h1 {
+    padding-top: 3em;
+  }
+
+}
+
+

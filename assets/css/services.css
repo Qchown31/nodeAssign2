@@ -1,0 +1,121 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("header-footer.css");
+
+
+figure {
+  display: flex;
+  margin-top: 4em;
+  background-image: url(/images/IMG_20190522_150440.jpg);
+  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  width: 100%;
+  height: 40vh;
+  
+  justify-content: center;
+  
+
+}
+
+hr {
+  border: 1px solid #103112;
+  margin-top: 5em;
+ 
+}
+/*  Slogan on hero page */
+
+h1 {
+  color: #c5b358;
+  margin: auto;
+  text-align: center;
+  padding-bottom: .5em;
+  padding-top: .5em;
+
+}
+
+div#herofoot {
+  display: flex;
+  background-color: #10311281;
+  width: 100vw;
+  
+}
+
+nav li:hover {
+  transform: scale(1.1)
+}
+
+
+
+/* main content  */
+
+html {
+  background-image: linear-gradient(#c5b358, #ddd6b0);
+}
+main  {
+  margin: 10vw;
+  margin-top: 100px;
+  text-align: center;
+
+}
+
+h2, h3, h4 {
+  font-family: gothambold;
+  font-size: 3em;
+  color: #103112;
+  padding: 1em;
+}
+
+p {
+  font-family: gothamcondensed-medium;
+  font-size: 2em;
+}
+
+blockquote {
+
+  float: right;
+  width: 20ch;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+  border-top: 1px solid #103112;
+  border-bottom: 1px solid #103112;
+}
+
+
+
+h6 {
+  font-size: 1.5em;
+
+}
+
+p#quote {
+  font-size: 1em;
+  border-bottom: 1px solid #103112;
+  padding-bottom: .5em;
+  
+}
+
+
+@media only screen and (max-width: 500px) {
+  h2, h3, h4 {
+    
+    font-size: 1.6em;
+    padding: 1em;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  blockquote {
+    width: 15ch;
+    font-size: .6em;
+    line-height: 1.1em;
+  }
+
+  
+  
+
+}
+

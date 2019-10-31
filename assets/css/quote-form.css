@@ -1,0 +1,83 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("header-footer.css");
+
+
+html {
+  background-image: linear-gradient(#c5b35894, #ddd6b0a1);
+}
+
+div.grid {
+  padding-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  width: 80vw;
+  justify-content: center;
+  margin: 5vh 10vw 5vh 10vw;
+}
+
+
+
+h1, #description {
+  text-align: center;
+  padding-bottom: 1em;
+  color: #103112;
+}
+
+
+[type=text], [type=tel], [type=password] {
+  width: 80vw;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #ffffff70;
+  border-radius: 20px;
+  
+}
+
+.rq::after {
+  content: " *";
+  color:red;
+  
+}
+
+
+
+hr {
+  border-top: 2px solid #103112;
+  margin-bottom: 25px;
+  width: 80vw;
+}
+textarea {
+  width: 80vw;
+  height: 200px;
+  background: #ffffff70;
+  border: none;
+  border-radius: 20px;
+}
+label {
+  padding-bottom: 1em;
+  color: #103112;
+}
+
+
+.submit {
+  background-color: #103112;
+  color: #c5b358;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80vw;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+
+

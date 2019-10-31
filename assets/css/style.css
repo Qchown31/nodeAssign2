@@ -1,0 +1,212 @@
+@import url("reset.css");
+@import url("font.css");
+@import url("header-footer.css");
+
+
+
+figure {
+  display: flex;
+  background-image: url(/images/IMG_20190530_184735-min.jpg);
+  background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  width: 100%;
+  height: 90vh;
+  align-items: flex-end;
+  justify-content: center;
+  
+
+}
+/*  Slogan on hero page */
+
+h1 {
+  color: #c5b358;
+  margin: auto;
+  text-align: center;
+  padding-bottom: .5em;
+  padding-top: .5em;
+
+}
+
+div#herofoot {
+  display: flex;
+  background-color: #103112cc;
+  width: 100vw;
+}
+
+nav li:hover {
+  transform: scale(1.1)
+}
+
+
+
+
+  /* services preview */
+ 
+  h2 {
+    
+    color: #103112;
+    text-align: center;
+    padding: 1em 0em 2em 0em;
+  }
+.grid {
+  display: grid;
+  
+}
+
+div.grid {
+  
+  grid-template-columns: repeat(auto-fit, minmax(412px, 1fr));
+  grid-gap:10px;
+  margin: 2em;
+  
+  
+  
+}
+
+div#servicesa > article > img {
+  border-radius: 20px;
+  float: left;
+}
+
+div#servicesa > article {
+  color: #c5b358;
+  background-color: #103112ee;
+  padding: 1em;
+  border: 5px solid #c5b358 ;
+  border-radius: 20px;
+
+}
+ 
+
+
+h3 {
+  color: #103112;
+  text-align: center;
+  padding: .5em;
+  background: #c5b358; 
+  border-radius: 20px;
+  margin-bottom: .5em;
+}
+
+h3:hover {
+  transform: scale(1.1)
+}
+h3, p {
+  font-size: .6em;
+}
+
+@media only screen and (max-width: 620px) {
+  h3, p {
+    font-size: .5em;
+  }
+  div.grid {
+  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:10px;
+    
+    
+  }
+
+ 
+ 
+}
+
+@media only screen and (max-width: 500px) {
+   p {
+    font-size: .4em;
+  }
+
+  h3 {
+    font-size:.45em;
+  }
+  div.grid {
+  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:5px;
+    
+  }
+
+ 
+  div.grid {
+    margin: .5em;
+  }
+
+ 
+
+ 
+}
+
+
+
+
+/* review section */
+
+
+
+
+h4 {
+  color: #103112;
+  text-align: center;
+  padding: 1em;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+.card {
+  background-color: #103112ea;
+  margin: 1em;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 200px;
+  max-width: 500px;
+  border: 2.5px solid #c5b358;
+  
+}
+div.photo {
+  height: 150px;
+  width: 150px;
+  padding-right: 2em;
+  float: left;
+  shape-outside: circle(45%);
+ 
+ 
+}
+
+h5 {
+  text-align: center;
+  font-size: 2em;
+  color:#cabf89;
+}
+
+
+p.text {
+  font-size:1.2em;
+  color: #c5b358;
+
+}
+
+.img {
+  border: 2.5px solid #c5b358;
+  border-radius: 50%;
+ 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-container {
+  flex: 2;
+}
+
+
+
+
+
+
